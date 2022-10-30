@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Descripcion del proyecto
+
+Este proyecto es un e-commerce de una tienda en la cual se venden articulos de la cultura del manga y el anime, elegí hacerlo sobre esto porque es un tema que me apasiona mucho y me parecio que se prestaba para el proyecto.
+No utilicé librerias o dependencias extras.
+
 ## Available Scripts
 
 In the project directory, you can run:
