@@ -14,7 +14,7 @@ const useCart = () => {
 };
 
 const CartContextProvider = ({ children }) => {
-  const [products, setproducts] = useState();
+  const [products, setproducts] = useState([]);
 
   const addToCart = (product) => {
     setproducts((products) => [...products, product]);
@@ -31,7 +31,7 @@ const CartContextProvider = ({ children }) => {
     count: products.lenght
   };
 
-  return <CartContextProvider value={context}>{children}</CartContextProvider>;
+  return <cartContext.Provider value={context}>{children}</cartContext.Provider>;
 };
 
 export { useCart, CartContextProvider };

@@ -1,4 +1,4 @@
-import './estilos/estilosCart.css'
+/* import './estilos/estilosCart.css' */
 import React from "react";
 import { Link } from "react-router-dom";
 
