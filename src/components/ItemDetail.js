@@ -16,12 +16,6 @@ const ItemDetail = () => {
 
   const getProduct = () => {
     const db = getFirestore();
-   /*  const itemCollection = getDoc(doc(db, "items"));
-    const docRef = doc(itemCollection, id);
-    getDocs(docRef).then((res) => {
-      console.log(res.data());
-      setProduct(res.data());
-    }); */
     const docRef = doc(db,'items' ,id);
     getDoc(docRef).then((res) =>{
       setProduct({id: res.id, ...res.data()})
@@ -33,13 +27,14 @@ const ItemDetail = () => {
   };
 
   return (
-    <div>
-      <div className="">{product.nombre}</div>
-      <div className="">{product.precio}</div>
-      <div className="">{product.demografia}</div>
-      <div className="">{product.categoria}</div>
-      <img className="" src={product.img} height={200}></img>
-      <button onClick={addHandler}> Agregar a Carrito </button>
+    <div className="detail-card-container">
+      <div className="item-card-detail">
+      <div className="item-title-detail">{product.nombre}</div>
+      <div className="item-title-detail">{product.precio}</div>
+      <div className="item-title-detail">{product.demografia}</div>
+      <img className="item-detail-img" src={product.img} height={200}></img>
+      <button className="add-cart-button" onClick={addHandler}> Agregar a Carrito </button>
+      </div>
     </div>
   );
 };

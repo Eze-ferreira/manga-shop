@@ -15,6 +15,9 @@ function App() {
           <Route path="/" element={<ListContainer />}>
             {" "}
           </Route>
+          <Route path="/:category" element={<ListContainer />}>
+            {" "}
+          </Route>
           <Route path="/cart" element={<Cart />}>
             {" "}
           </Route>
