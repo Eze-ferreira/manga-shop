@@ -57,9 +57,10 @@ const Form = () => {
   };
 
   return (
+    
     <form onSubmit={handleSubmit} className="form-container">
       <div className="form-container-inside">
-        <label className="input-label">Name:</label>
+        <label className="input-label">Nombre:</label>
         <input
           className="input-box"
           type="text"
@@ -70,7 +71,7 @@ const Form = () => {
         />
       </div>
       <div className="form-container-inside">
-        <label className="input-label">Second name:</label>
+        <label className="input-label">Apellido:</label>
         <input
           className="input-box"
           type="text"
@@ -81,7 +82,7 @@ const Form = () => {
         />
       </div>
       <div className="form-container-inside">
-        <label className="input-label">Email address:</label>
+        <label className="input-label">Email:</label>
         <input
           className="input-box"
           type="email"
@@ -92,7 +93,7 @@ const Form = () => {
         />
       </div>
       <div className="form-container-inside">
-        <label className="input-label">Confirm email address:</label>
+        <label className="input-label">Confirma tu email:</label>
         <input
           className="input-box"
           type="email"
@@ -103,7 +104,7 @@ const Form = () => {
         />
       </div>
       <div className="form-container-inside">
-        <label className="input-label">Phone Number:</label>
+        <label className="input-label">Número Telefonico:</label>
         <input
           className="input-box"
           type="number"
@@ -118,7 +119,7 @@ const Form = () => {
         className={disabled ? "finish-btn disabled" : "finish-btn"}
         disabled={disabled}
       >
-        Finish Payment
+        Terminar Pago
       </button>
     </form>
   );

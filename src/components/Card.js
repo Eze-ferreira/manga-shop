@@ -6,7 +6,7 @@ export const Card = ({ id, nombre, precio, demografia, img }) => {
     <Link to={`/detail/${id}`}>
       <div className="item-card">
       <div className="item-title">{nombre}</div>
-      <div className="item-title">{precio}</div>
+      <div className="item-title">${precio}</div>
       <img className="item-card-img" src={img} height={200} />
       </div>
       
